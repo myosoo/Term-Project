@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.collections.FXCollections ?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Selcontroller">
+   <children>
+      <Label layoutX="110.0" layoutY="90.0" text="플레이어 수" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="170.0" text="게임말 개수" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="com1" layoutX="240.0" layoutY="90.0" prefWidth="150.0" promptText="선택하세요">
+      	<items>
+       	   <FXCollections fx:factory="observableArrayList">
+            	<String fx:value="2" />
+                <String fx:value="3" />
+                <String fx:value="4" />
+            </FXCollections>        
+         </items>
+	  </ComboBox>
+      <ComboBox fx:id="com2" layoutX="240.0" layoutY="170.0" prefWidth="150.0" promptText="선택하세요">
+      	<items>
+        	<FXCollections fx:factory="observableArrayList">
+            	<String fx:value="2" />
+                <String fx:value="3" />
+                <String fx:value="4" />
+                <String fx:value="5" />
+            </FXCollections>
+         </items>
+	  </ComboBox>
+      <Button fx:id="sel" layoutX="160.0" layoutY="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="선택">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

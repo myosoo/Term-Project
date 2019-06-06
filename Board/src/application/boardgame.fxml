@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Boardgame">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbb00ba" height="600.0" stroke="BLACK" strokeType="INSIDE" width="600.0" />
+      <Line endY="500.0" layoutX="300.0" layoutY="150.0" rotate="135.0" startY="-203.0" strokeWidth="2.0" />
+      <Line endY="500.0" layoutX="300.0" layoutY="150.0" rotate="45.0" startY="-203.0" strokeWidth="2.0" />
+      <Line endX="400.0" layoutX="150.0" layoutY="49.0" startX="-100.0" />
+      <Line endX="500.0" layoutX="50.0" layoutY="550.0" />
+      <Line endY="500.0" layoutX="50.0" layoutY="50.0" />
+      <Line endY="500.0" layoutX="550.0" layoutY="60.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="50.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="550.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="550.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="150.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="300.0" layoutY="300.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="250.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="350.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="450.0" layoutY="50.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="300.0" layoutY="300.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="150.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="250.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="350.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="50.0" layoutY="450.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="150.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="250.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="350.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="550.0" layoutY="450.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="150.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="250.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="350.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="450.0" layoutY="550.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="130.0" layoutY="130.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="210.0" layoutY="210.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="390.0" layoutY="390.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="470.0" layoutY="470.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="470.0" layoutY="130.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="390.0" layoutY="210.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="210.0" layoutY="390.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Circle fill="WHITE" layoutX="130.0" layoutY="470.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" />
+      <Text layoutX="510.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="출발/도착" textAlignment="CENTER" AnchorPane.leftAnchor="510.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btn1" layoutX="618.0" layoutY="14.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" text="윷던지기">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Button fx:id="selectyoot" layoutX="618.0" layoutY="64.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="174.0" text="지정된 윷 던지기">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="image" fitHeight="270.0" fitWidth="270.0" layoutX="611.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbb00" height="73.0" layoutX="270.0" layoutY="611.0" stroke="BLACK" strokeType="INSIDE" width="196.0" />
+      <Label fx:id="turn" layoutX="300.0" layoutY="625.0" prefHeight="66.0" prefWidth="181.0" text=" " textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffbb00" height="66.0" layoutX="12.0" layoutY="612.0" stroke="BLACK" strokeType="INSIDE" width="196.0" />
+      <Label fx:id="victory" layoutX="34.0" layoutY="628.0" prefHeight="60.0" prefWidth="152.0" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="346.0" layoutY="634.0" strokeType="OUTSIDE" strokeWidth="0.0" text="순서">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="80.0" layoutY="635.0" strokeType="OUTSIDE" strokeWidth="0.0" text="승리">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label layoutX="628.0" layoutY="437.0" prefHeight="30.0" prefWidth="67.0" text="Player1" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="628.0" layoutY="487.0" prefHeight="31.0" prefWidth="67.0" text="Player2" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="p1one" layoutX="720.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #1e90ff; -fx-border-color: #000000; -fx-border-width: 2;" text="0" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="p4label" layoutX="628.0" layoutY="587.0" prefHeight="31.0" prefWidth="105.0" text="Player4" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="p3label" layoutX="628.0" layoutY="537.0" prefHeight="31.0" prefWidth="105.0" text="Player3" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="759.0" layoutY="390.0" prefHeight="31.0" prefWidth="67.0" text="남은 말" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="p1two" layoutX="760.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #1e90ff; -fx-border-color: #000000; -fx-border-width: 2;" text="1" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p1three" layoutX="800.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #1e90ff; -fx-border-color: #000000; -fx-border-width: 2;" text="2" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p1four" layoutX="840.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #1e90ff; -fx-border-color: #000000; -fx-border-width: 2;" text="3" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p1five" layoutX="880.0" layoutY="450.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #1e90ff; -fx-border-color: #000000; -fx-border-width: 2;" text="4" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p2one" layoutX="720.0" layoutY="500.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #f11307; -fx-border-color: #000000; -fx-border-width: 2;" text="0" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p2two" layoutX="760.0" layoutY="500.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #f11307; -fx-border-color: #000000; -fx-border-width: 2;" text="1" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p2three" layoutX="800.0" layoutY="500.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #f11307; -fx-border-color: #000000; -fx-border-width: 2;" text="2" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p2four" layoutX="840.0" layoutY="500.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #f11307; -fx-border-color: #000000; -fx-border-width: 2;" text="3" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p2five" layoutX="880.0" layoutY="500.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #f11307; -fx-border-color: #000000; -fx-border-width: 2;" text="4" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p3one" layoutX="720.0" layoutY="550.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #2eef07; -fx-border-color: #000000; -fx-border-width: 2;" text="0" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p3two" layoutX="760.0" layoutY="550.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #2eef07; -fx-border-color: #000000; -fx-border-width: 2;" text="1" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p3three" layoutX="800.0" layoutY="550.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #2eef07; -fx-border-color: #000000; -fx-border-width: 2;" text="2" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p3four" layoutX="840.0" layoutY="550.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #2eef07; -fx-border-color: #000000; -fx-border-width: 2;" text="3" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p3five" layoutX="880.0" layoutY="550.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #2eef07; -fx-border-color: #000000; -fx-border-width: 2;" text="4" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p4one" layoutX="720.0" layoutY="600.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #d507ed; -fx-border-color: #000000; -fx-border-width: 2;" text="0" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p4two" layoutX="760.0" layoutY="600.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #d507ed; -fx-border-color: #000000; -fx-border-width: 2;" text="1" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p4three" layoutX="800.0" layoutY="600.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #d507ed; -fx-border-color: #000000; -fx-border-width: 2;" text="2" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p4four" layoutX="840.0" layoutY="600.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #d507ed; -fx-border-color: #000000; -fx-border-width: 2;" text="3" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="p4five" layoutX="880.0" layoutY="600.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="34.0" style="-fx-background-color: #d507ed; -fx-border-color: #000000; -fx-border-width: 2;" text="4" translateX="-15.0" translateY="-15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="gameexit" alignment="CENTER" layoutX="642.0" layoutY="648.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="134.0" text="게임 종료">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="gamerestart" alignment="CENTER" layoutX="490.0" layoutY="648.0" mnemonicParsing="false" text="게임 재시작">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="selyoot" layoutX="802.0" layoutY="64.0" prefHeight="33.0" prefWidth="174.0" />
+   </children>
+</Pane>
