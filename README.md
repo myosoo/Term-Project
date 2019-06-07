@@ -12,7 +12,20 @@ This rendition of the gameboard differs from the original and much loved gameboa
 
 ## The classes we used
 * Boardgame
+  Yut board!!!
   1. Set the number of players and each player's pieces (Minimum 2, Maximum 4)
-  2. Specifies an array of pieces grouped together. 
-  3. Throw button, Progress of the game, Catching a pieces and specifies movement of the group.
-  4. Specify end and restart of the game.
+  1. Specifies an array of pieces grouped together. 
+  1. Throw button, Progress of the game, Catching a pieces and specifies movement of the group.
+  1. Specify end and restart of the game.
+* Dice
+  1. Yut of yutnori
+  1. 'Do', 'Gae', 'Geol', 'Yut', 'Mo'
+* Mal
+  1. Movement of pieces
+* Team
+  1. Specifies the relationship and movement of the team's pieces
+  1. Grouping of pieces
+* Playgame
+  1. Execution
+  1. Whether to win
+  1. Catching a enemy picese
