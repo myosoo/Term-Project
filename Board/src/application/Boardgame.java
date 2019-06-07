@@ -3,7 +3,6 @@ package application;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -25,6 +24,11 @@ public class Boardgame implements Initializable {
 	static int count; // 말 개수
 	static int malmove, flag = 0; // 플레이어 및 윷의 결과
 	static Button[][] btnmal;
+	Dice dice = new Dice();
+	static public Team[] team;
+	PlayGame playgame = new PlayGame();
+	static boolean[] confirm = { false, false }; // 0인데스 : 말 잡을 때, 1인덱스 : 우승 여부
+	static boolean yootdice = false;
 	Image backdo = new Image("빽도.png");
 	Image doo = new Image("도.png");
 	Image gae = new Image("개.png");
@@ -93,12 +97,8 @@ public class Boardgame implements Initializable {
 	private Label turn;
 	@FXML
 	private Label victory;
-	Dice dice = new Dice();
-	static public Team[] team;
-	PlayGame playgame = new PlayGame();
-	static boolean[] confirm = { false, false }; // 0인데스 : 말 잡을 때, 1인덱스 : 우승 여부
-	// 플레이어 인원과 말 개수 값 설정
 
+	// 플레이어 인원과 말 개수 값 설정
 	public void setnumber(int play, int cnt) {
 		player = play;
 		count = cnt;
@@ -357,7 +357,6 @@ public class Boardgame implements Initializable {
 		for (int i = 0; i < player; i++) {
 			team[i] = new Team("player" + (i + 1), count);
 		}
-
 		btn1.setOnAction(event -> handleBtn1Action(event));
 		selectyoot.setOnAction(event -> handleselectyoot(event));
 		p1one.setOnAction(event -> turn(event, p1one));
@@ -403,6 +402,7 @@ public class Boardgame implements Initializable {
 		malmove = num;
 		turn.setText(team[flag].getName() + " 입니다.");
 		turn.getText();
+		yootdice = true;
 	}
 
 	// 지정된 윷 던지기 버튼 클릭
@@ -426,34 +426,49 @@ public class Boardgame implements Initializable {
 		malmove = num;
 		turn.setText(team[flag].getName() + " 입니다.");
 		turn.getText();
+		yootdice = true;
 	}
 
 	// 플레이어의 순서
 	public void turn(ActionEvent event, Button buttonmal) {
-		if (flag == 0 && game(buttonmal) != -1) {
-			if (malmove == 4 || malmove == 5 || confirm[0] == true);// 말을 잡거나 율 또는 모가 나올경우
-			else
-				flag += 1;
-		} else if (flag == 1 && game(buttonmal) != -1) {
-			if (malmove == 4 || malmove == 5 || confirm[0] == true);// 말을 잡거나 율 또는 모가 나올경우
-			else {
-				if (player >= 3)
+		if (yootdice == true && game(buttonmal) != -1) { // 윷을 던졌을 경우
+			if (flag == 0 ) {
+				if (malmove == 4 || malmove == 5 || confirm[0] == true)
+					;// 말을 잡거나 율 또는 모가 나올경우
+				else
 					flag += 1;
+			} else if (flag == 1   ) {
+				if (malmove == 4 || malmove == 5 || confirm[0] == true)
+					; // 말을 잡거나 율 또는 모가 나올경우
+				else {
+					if (player >= 3)
+						flag += 1;
+					else
+						flag = 0;
+				}
+			} else if (flag == 2   ) {
+				// 말을 잡거나 율 또는 모가 나올경우
+				if (malmove == 4 || malmove == 5 || confirm[0] == true);
+				else {
+					if (player == 4)
+						flag += 1;
+					else
+						flag = 0;
+				}
+			} else if (flag == 3   ) {
+				if (malmove == 4 || malmove == 5 || confirm[0] == true)
+					;
 				else
 					flag = 0;
 			}
-		} else if (flag == 2 && game(buttonmal) != -1) {
-			if (malmove == 4 || malmove == 5 || confirm[0] == true);// 말을 잡거나 율 또는 모가 나올경우
-			else {
-				if (player == 4)
-					flag += 1;
-				else
-					flag = 0;
-			}
-		} else if (flag == 3 && game(buttonmal) != -1) {
-			if (malmove == 4 || malmove == 5 || confirm[0] == true);// 말을 잡거나 율 또는 모가 나올경우
-			else
-				flag = 0;
+		yootdice = false;
+		}
+		else if(yootdice == false) { // 윷을 던지지 않았을 경우
+			Alert alert = new Alert(AlertType.WARNING);
+			alert.setTitle("Warning");
+			alert.setHeaderText("Look, a Warning Dialog");
+			alert.setContentText("윷을 던져주세요!!");
+			alert.showAndWait();
 		}
 	}
 
@@ -476,7 +491,7 @@ public class Boardgame implements Initializable {
 			Alert alert = new Alert(AlertType.WARNING);
 			alert.setTitle("Warning");
 			alert.setHeaderText("Look, a Warning Dialog");
-			alert.setContentText("자신의 말이 아닙니다. 다시선택해주세요!");
+			alert.setContentText("잘못된 선택입니다. 다시선택해주세요!");
 			alert.showAndWait();
 		}
 		return malnum;
@@ -496,7 +511,7 @@ public class Boardgame implements Initializable {
 
 	// 승리표현
 	public void win() {
-		victory.setText(team[flag].getName() + "이 이겼습니다!!");
+		victory.setText(team[flag].getName() + "승리!!");
 		victory.getText();
 		Alert alert = new Alert(AlertType.INFORMATION);
 		alert.setTitle("승리");

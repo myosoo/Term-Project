@@ -35,7 +35,7 @@ public class Team {
 				cnt++;
 			}
 		}
-		
+
 		// 해당 말과 업힌 말들의 이동
 		for (int i = 0; i < this.arr[nMal].length; i++) {
 			if (this.arr[nMal][i] == true) {
@@ -43,29 +43,33 @@ public class Team {
 				groupmal.groupmove(cnt, i);
 			}
 		}
-		group(nMal, mal[nMal].getX(), mal[nMal].getY());
-		
+		if (group(nMal, mal[nMal].getX(), mal[nMal].getY())) {
+			Alert alert = new Alert(AlertType.INFORMATION); // 업었다는 알림창
+			alert.setTitle("업기");
+			alert.setHeaderText(null);
+			alert.setContentText("말을 업었습니다");
+			alert.showAndWait();
+		}
+
 		return b;
 	}
 
 	// 업기
 	public boolean group(int nMal, int x, int y) {
+		boolean bool = false;
 		for (int i = 0; i < arr.length; i++) {
 			if (arr[nMal][i] == false) { // 아직 안 업혔고
 				if (mal[i].getX() == x && mal[i].getY() == y) { // 동일한 좌표에 있고
 					if (mal[nMal].getIsFinish() == false && mal[i].getIsStart() == true) { // 진행중인 말이라면
 						this.arr[nMal][i] = true;
 						this.arr[i][nMal] = true;
-						Alert alert = new Alert(AlertType.INFORMATION); // 업었다는 알림창
-						alert.setTitle("승리");
-						alert.setHeaderText(null);
-						alert.setContentText("말을 업었습니다");
-						alert.showAndWait();
+						bool = true;
+
 					}
 				}
 			}
 		}
-		return false;
+		return bool;
 	}
 
 	// 시작점으로

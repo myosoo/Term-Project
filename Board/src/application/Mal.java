@@ -52,16 +52,16 @@ public class Mal {
 		// 왼쪽 대각선
 		else if (x == y && isStart == true) {
 			for (int i = 0; i < n; i++) {
-				x += 80;
-				y += 80;
-
 				if (x == 210 || x == 300) {
 					x += 10;
 					y += 10;
 				}
 
+				x += 80;
+				y += 80;
+
 				// 골인
-				if (x == 550) {
+				if (x > 550 && x < 720) {
 					x = 1100;
 					y = 1100;
 					isFinish = true;
@@ -71,40 +71,17 @@ public class Mal {
 		}
 		// 오른쪽 대각선
 		else if (x + y == 600 && x != 50) {
-			if(x==300 && y==300) {
-				if(n==1) {
-					x=390;
-					y=390;
-				}
-				else if(n==2) {
-					x=470;
-					y=470;
-				}
-				else if(n==3) {
-					x=550;
-					y=550;
-				}
-				else if(n>=4) {
-					// 골인
-					if (x > 550 && x < 720) {
-						x = 1100;
-						y = 1100;
-						isFinish = true;
-						return true;
-					}
-				}
-			}
 			for (int i = 0; i < n; i++) {
 				if (y == 550) {
 					x += 100;
-				} 
-				else {
-					x -= 80;
-					y += 80;
+				} else {
 					if (x == 390 || x == 300) {
 						x -= 10;
 						y += 10;
 					}
+					x -= 80;
+					y += 80;
+
 				}
 			}
 
@@ -131,10 +108,10 @@ public class Mal {
 						y += 100;
 				} else if (y == 550) {
 					x += 100;
-				} 
-				
+				}
+
 				// 잡힌 말이 다시 시작 할 경우
-				else if (x >= 720 && y >= 450 && isStart == false) { 
+				else if (x >= 720 && y >= 450 && isStart == false) {
 					if (n == -1) {
 						x = 550;
 						y = 550;
@@ -166,6 +143,7 @@ public class Mal {
 				}
 			}
 		}
+		System.out.println(x + "," + y);
 		isStart = true;
 		return false;
 	}

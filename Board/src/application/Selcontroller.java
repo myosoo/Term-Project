@@ -23,7 +23,7 @@ public class Selcontroller implements Initializable {
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		/* 다음 화면 이동 : 화면전환 */
+		// 다음 화면 이동  화면전환 
 		sel.setOnAction(event -> selectcontroller(event));
 	}
 

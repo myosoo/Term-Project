@@ -34,6 +34,7 @@ public class PlayGame {
 	// 다른 팀 말 잡기
 	public boolean capture(Mal mal, int nTeam, Team[] team) {
 		Boardgame btn = new Boardgame();
+		boolean bool = false;
 		for (int k = 0; k < team.length; k++) {
 			if (k != nTeam) {
 				for (int i = 0; i < team[k].numOfmal(); i++) {
@@ -49,12 +50,14 @@ public class PlayGame {
 								team[k].setArr(i, j, false);
 							}
 							team[k].setArr(i, i, true);
-							return true;
+							bool = true;
 						}
 					}
 				}
 			}
 		}
+		if(bool)
+			return true;
 		return false;
 	}
 
