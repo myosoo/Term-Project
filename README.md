@@ -6,7 +6,7 @@ This repository is for term project of Human ICT Software Engineering Class, in 
 * 전병국
 * 이준하
 
-## What is Yutnori?
+## Introduction
 It is a game played by young and old alike and is usually most often played during national South Korean holidays. The game consists of tossing 4 sticks shaped like half moons. The players toss the 4 sticks in the air and each combination of sticks landing represent the number of points the players receive. The points are then used to move the players' life pieces around the circular or rectangular board and the player that circles the board 3 times first, wins the game.
 This rendition of the gameboard differs from the original and much loved gameboard. Normally, the gameboard is shaped like a rectangle with an 'X' that extends from the four corners across the middle. In the original game, the players are also able to decide on the route they wish to take their pieces. The different routes help players avoid being run into by their opponents
 
@@ -29,7 +29,7 @@ This rendition of the gameboard differs from the original and much loved gameboa
   1. Execution
   1. Whether to win
   1. Catching a enemy picese
-## Features
+## Main features
 * When the game start, you can specify the number of players and the number of each player's pieces
 * The game is played using the throw button in the designated order
 * You can catch the enemy's pieces and group your own pieces
