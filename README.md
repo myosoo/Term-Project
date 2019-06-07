@@ -29,3 +29,10 @@ This rendition of the gameboard differs from the original and much loved gameboa
   1. Execution
   1. Whether to win
   1. Catching a enemy picese
+## Features
+* When the game start, you can specify the number of players and the number of each player's pieces
+* The game is played using the throw button in the designated order
+* You can catch the enemy's pieces and group your own pieces
+* When the game ends, you can choose to quit or restart the game
+## Language  
+JAVA
