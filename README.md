@@ -11,7 +11,7 @@ It is a game played by young and old alike and is usually most often played duri
 This rendition of the gameboard differs from the original and much loved gameboard. Normally, the gameboard is shaped like a rectangle with an 'X' that extends from the four corners across the middle. In the original game, the players are also able to decide on the route they wish to take their pieces. The different routes help players avoid being run into by their opponents
 
 ## The classes we used
-* Boardgame
+* Boardgame  
   Yut board!!!
   1. Set the number of players and each player's pieces (Minimum 2, Maximum 4)
   1. Specifies an array of pieces grouped together. 
