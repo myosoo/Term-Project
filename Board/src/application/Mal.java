@@ -143,7 +143,6 @@ public class Mal {
 				}
 			}
 		}
-		System.out.println(x + "," + y);
 		isStart = true;
 		return false;
 	}

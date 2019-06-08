@@ -6,7 +6,6 @@ public class Dice {
 		int cnt = 0;
 		for (int i = 0; i < 4; i++) {
 			dice[i] = (int) ((Math.random() * 100) % 2);
-
 			if (dice[i] == 0) // 1이 위, 0이 아래
 				cnt++;
 		}

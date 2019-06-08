@@ -25,7 +25,7 @@ public class Boardgame implements Initializable {
 	static int malmove, flag = 0; // 플레이어 및 윷의 결과
 	static Button[][] btnmal;
 	Dice dice = new Dice();
-	static public Team[] team;
+	static public Player[] team;
 	PlayGame playgame = new PlayGame();
 	static boolean[] confirm = { false, false }; // 0인데스 : 말 잡을 때, 1인덱스 : 우승 여부
 	static boolean yootdice = false;
@@ -128,7 +128,7 @@ public class Boardgame implements Initializable {
 				p2five.setVisible(false);
 			}
 
-			else if (count == 3) {
+			else if (count == 3) { 
 				p1four.setVisible(false);
 				p1five.setVisible(false);
 				p2four.setVisible(false);
@@ -351,11 +351,11 @@ public class Boardgame implements Initializable {
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		Init();
-		team = new Team[player];
+		team = new Player[player];
 		btnmal = new Button[player][count];
 		malstore(btnmal);
 		for (int i = 0; i < player; i++) {
-			team[i] = new Team("player" + (i + 1), count);
+			team[i] = new Player("player" + (i + 1), count);
 		}
 		btn1.setOnAction(event -> handleBtn1Action(event));
 		selectyoot.setOnAction(event -> handleselectyoot(event));
@@ -498,7 +498,7 @@ public class Boardgame implements Initializable {
 	}
 
 	// 잡힌 말 제자리로
-	public void malposition(int player, int mal, Team[] teamm) {
+	public void malposition(int player, int mal, Player[] teamm) {
 		btnmal[player][mal].setLayoutX(team[player].getX(mal));
 		btnmal[player][mal].setLayoutY(team[player].getY(mal));
 	}
