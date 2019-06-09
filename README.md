@@ -22,13 +22,14 @@ This rendition of the gameboard differs from the original and much loved gameboa
   1. 'Do', 'Gae', 'Geol', 'Yut', 'Mo'
 * Mal
   1. Movement of pieces
-* Team
+* Player
   1. Specifies the relationship and movement of the team's pieces
   1. Grouping of pieces
-* Playgame
-  1. Execution
   1. Whether to win
   1. Catching a enemy picese
+* Playgame
+  1. Execution
+  
 ## Main features
 * When the game start, you can specify the number of players and the number of each player's pieces
 * The game is played using the throw button in the designated order
